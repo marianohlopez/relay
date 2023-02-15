@@ -39,7 +39,7 @@ li {
     .btnNavBar {
         display: flex;
         flex-direction: column;
-        color: black;
+        color: white;
         text-align: center;
         width: auto;
         font-size: 28px;
@@ -55,6 +55,6 @@ li {
     }
 
     .btnNavActive {
-        color: black;
+        color: white;
     }
 }

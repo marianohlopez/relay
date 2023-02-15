@@ -6,14 +6,15 @@ import './navbar.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './Logo-rojo.png'
 
-const NavBar = () => {
+const NavBar = ({Toggle}) => {
+
     return (
 
-        <Navbar className='navBar' expand="lg">
+        <Navbar onToggle={Toggle} className='navBar' expand="lg">
             <Container>
                 <Navbar.Brand><Link to={'/'}><img className="logo" src={logo} alt="Logo de empresa"/></Link></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
+                <Navbar.Collapse className={({isActive}) => (isActive? console.log("hola") :  console.log("chau"))}  id="basic-navbar-nav">
                     <Nav className="ms-auto ">
                         <ul className="btnNavBar">
                             <li>
