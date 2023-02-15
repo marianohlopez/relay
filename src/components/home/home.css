@@ -1,0 +1,19 @@
+.font {
+    background-image: url("./banner.jpg");
+    background-size: cover;
+    height: 710px;
+}
+
+@media (max-width: 900px) {
+    .font {
+        background-image: url("./img_mobile.jpg");
+        height: 920px;
+    }
+}
+
+@media (max-width: 700px) {
+    .font {
+        background-image: url("./img_mobile.jpg");
+        height: 520px;
+    }
+}

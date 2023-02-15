@@ -1,14 +1,12 @@
 import './App.css';
-import NavBar from './components/Home/navbar/Navbar';
-import FontImage from './components/Home/homeImage/Font.jsx';
+import Home from './components/home/Home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <NavBar />
-        <FontImage />
+          <Home />
         <Routes>
           <Route path='/' />
         </Routes>
