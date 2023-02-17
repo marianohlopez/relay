@@ -3,19 +3,19 @@ import Marquee from "react-fast-marquee";
 import './MarqueeNews.css';
 
 
-const MarqueeNews = ({Texts=[]}) => {
-let code=[];
-for(let i=0; i<10; i++){
-    Texts?.map(text => ( 
-        code.push(<><span className='marquee_text'>{text}</span><img className='marquee_logo' src="/img/Logo2-violeta.png" alt="Home_relay" /></>)
-        ))
-            
-}
+const MarqueeNews = ({Texts=[],Repeat=10}) => {
+ 
+
 return (
         <>
-     <Marquee gradient={false} style={{overflow: 'hidden', backgroundColor: '#0C0301'}}>
+     <Marquee className="marquee_home" gradient={false}>
 
-{code}
+{
+     [...Array(Repeat)].map(e => (Texts?.map((text, index) => ( 
+        <span key={(index+1)} className='marquee_text'>{text}<img className='marquee_logo' src="/img/Logo2-violeta.png" alt="Home_relay" /></span>)
+        )))
+            
+}
         </Marquee>  
 
 

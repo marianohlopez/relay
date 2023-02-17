@@ -9,9 +9,9 @@ function App() {
     <div className="App">
       <BrowserRouter>
           <Home />
-          <MarqueeNews Texts={["NEWS","NOVEDADES"]} />
+          <MarqueeNews Texts={["NEWS","NOVEDADES"]} Repeat={10} />
           <Instagram/> 
-          <MarqueeNews Texts={["DISCOGRAFIA"]} />
+          <MarqueeNews Texts={["DISCOGRAFIA"]} Repeat={7} />
 
         <Routes>
           <Route path='/' />
