@@ -1,0 +1,29 @@
+.marquee_home{
+  background: #0C0301;
+overflow: hidden;
+}
+  .marquee_text{
+  /* NEWS */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #FFFFFF;
+  margin-left: 9px;
+  
+  }
+  .marquee_logo{
+    width: 35px;
+    background: #0C0301;
+margin-left: 9px;
+  }
+
+  @media (max-width: 991px) {
+    .marquee_logo{
+      width: 25px;
+    }
+    .marquee_text{
+    font-size: 16px;
+  }
+  }
+  
