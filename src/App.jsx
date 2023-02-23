@@ -5,6 +5,7 @@ import MarqueeNews from './components/home/MarqueeNews';
 import Instagram from './components/novedades/Instagram';
 import Videogif from './components/discografia/Videogif';
 import Biografia from './components/biografia/Biografia';
+import "@fontsource/roboto";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
           <Videogif/>
           <MarqueeNews Texts={["BIOGRAFIA"]} Repeat={12} />
           <Biografia/>
-          <MarqueeNews Texts={["TOURS"]} Repeat={25} />
+          <MarqueeNews Texts={["TOURS"]} Repeat={15} />
 
         <Routes>
           <Route path='/' />
