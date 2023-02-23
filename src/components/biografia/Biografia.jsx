@@ -1,8 +1,19 @@
 import React from 'react';
 import './biografia.css'
+import biografia1 from './relay_biografia_1.png'
+import biografia2 from './relay_biografia_2.png'
+import biografia3 from './relay_biografia_3.png'
+
 const Biografia = () => {
     return (
         <div className='image'>
+            <div>
+                <img className='images_bio' src={biografia1} />
+                <img className='images_bio' src={biografia2} style={{marginLeft: '5%', marginRight: '5%'}}/>
+                <img className='images_bio' src={biografia3} />
+
+
+            </div>
   <div className="texto">
 
   <p>Relay! es una banda oriunda del barrio de Almagro, Ciudad de Buenos Aires. Su sonido se caracteriza
