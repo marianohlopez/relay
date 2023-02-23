@@ -8,9 +8,9 @@ const Biografia = () => {
     return (
         <div className='image'>
             <div>
-                <img className='images_bio' src={biografia1} />
-                <img className='images_bio' src={biografia2} style={{marginLeft: '5%', marginRight: '5%'}}/>
-                <img className='images_bio' src={biografia3} />
+                <img className='images_bio' src={biografia1} alt="relay_bio_1"/>
+                <img className='images_bio' src={biografia2} alt="relay_bio_1" style={{marginLeft: '5%', marginRight: '5%'}}/>
+                <img className='images_bio' src={biografia3} alt="relay_bio_1" />
 
 
             </div>
