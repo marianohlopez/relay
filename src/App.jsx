@@ -2,7 +2,9 @@ import './App.css';
 import Home from './components/home/Home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MarqueeNews from './components/home/MarqueeNews';
-import Instagram from './components/home/Instagram';
+import Instagram from './components/novedades/Instagram';
+import Videogif from './components/discografia/Videogif';
+import Biografia from './components/biografia/Biografia';
 
 function App() {
   return (
@@ -11,7 +13,11 @@ function App() {
           <Home />
           <MarqueeNews Texts={["NEWS","NOVEDADES"]} Repeat={10} />
           <Instagram/> 
-          <MarqueeNews Texts={["DISCOGRAFIA"]} Repeat={7} />
+          <MarqueeNews Texts={["DISCOGRAFIA"]} Repeat={10} />
+          <Videogif/>
+          <MarqueeNews Texts={["BIOGRAFIA"]} Repeat={12} />
+          <Biografia/>
+          <MarqueeNews Texts={["TOURS"]} Repeat={25} />
 
         <Routes>
           <Route path='/' />
