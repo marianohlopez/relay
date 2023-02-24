@@ -14,7 +14,7 @@ const AlbumCarousel = () => {
 
     return (
         <div className='carouselFont'>
-            <Carousel variant="dark" indicators={false}>
+            <Carousel interval={null} variant="dark" indicators={false}>
                 <Carousel.Item>
                     <div className="d-flex justify-content-center align-items-center"> 
                         <img

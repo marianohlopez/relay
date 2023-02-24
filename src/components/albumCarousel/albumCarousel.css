@@ -26,7 +26,7 @@
     justify-content: center;
     align-items: center;
     font-weight: bolder;
-    z-index: 8;
+    z-index: 5;
 }
 
 .albumButton:hover {
@@ -65,6 +65,19 @@
     right: 12vw;
     width: 7vw;
     z-index: 2;
+}
+
+@media (max-width: 991px) {
+    .albumButton {
+        bottom: 17%;
+        left: 37%;
+        width: 50px;
+        height: 50px;
+    }
+
+    /*     .albumPlayerActive {
+        height: 300px;
+    } */
 }
 
 @media (max-width: 700px) {
