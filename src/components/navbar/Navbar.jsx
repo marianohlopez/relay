@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { Link, NavLink } from 'react-router-dom';
 import './navbar.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import logo from './Logo-rojo.png'
 
 const NavBar = ({Toggle}) => {
@@ -18,13 +19,13 @@ const NavBar = ({Toggle}) => {
                     <Nav className="ms-auto ">
                         <ul className="btnNavBar">
                             <li>
-                                <NavLink className={({isActive}) => (isActive? 'btnNavActive' :  'btnNav')} to={'/'}>Discografia</NavLink>
+                                <NavLink className={({isActive}) => (isActive? 'btnNavActive' :  'btnNav')}><ScrollLink to={'carousel'}>Discografia</ScrollLink></NavLink>
                             </li>
                             <li>
-                                <NavLink className={({isActive}) => (isActive? 'btnNavActive' :  'btnNav')} to={'/'}>Videos</NavLink>
+                                <NavLink className={({isActive}) => (isActive? 'btnNavActive' :  'btnNav')}><ScrollLink to={'videos'}>Videos</ScrollLink></NavLink>
                             </li>
                             <li>
-                                <NavLink className={({isActive}) => (isActive? 'btnNavActive' :  'btnNav')} to={'/'}>Biografia</NavLink>
+                                <NavLink className={({isActive}) => (isActive? 'btnNavActive' :  'btnNav')}><ScrollLink to={'biografia'}>Biografia</ScrollLink></NavLink>
                             </li>
                             <li>
                                 <NavLink className={({isActive}) => (isActive? 'btnNavActive' :  'btnNav')} to={'/'}>Tours</NavLink>

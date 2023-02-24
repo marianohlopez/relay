@@ -6,7 +6,7 @@ import biografia3 from './relay_biografia_3.png'
 
 const Biografia = () => {
     return (
-        <div className='image'>
+        <div id={"biografia"} className='image'>
             <div>
                 <img className='images_bio' src={biografia1} alt="relay_bio_1"/>
                 <img className='images_bio' src={biografia2} alt="relay_bio_1" style={{marginLeft: '5%', marginRight: '5%'}}/>
