@@ -5,6 +5,7 @@ import MarqueeNews from './components/home/MarqueeNews';
 import Instagram from './components/novedades/Instagram';
 import Videogif from './components/discografia/Videogif';
 import Biografia from './components/biografia/Biografia';
+import AlbumCarousel from './components/albumCarousel/AlbumCarousel';
 import "@fontsource/roboto";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <MarqueeNews Texts={["NEWS","NOVEDADES"]} Repeat={10} />
           <Instagram/> 
           <MarqueeNews Texts={["DISCOGRAFIA"]} Repeat={10} />
+          <AlbumCarousel />
           <Videogif/>
           <MarqueeNews Texts={["BIOGRAFIA"]} Repeat={12} />
           <Biografia/>
