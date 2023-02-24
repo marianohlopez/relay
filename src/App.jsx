@@ -13,7 +13,7 @@ function App() {
           <MarqueeNews Texts={["NEWS","NOVEDADES"]} Repeat={10} />
           <Instagram/> 
           <MarqueeNews Texts={["DISCOGRAFIA"]} Repeat={7} />
-        {/*   <AlbumCarousel /> */}
+          <AlbumCarousel />
         <Routes>
           <Route path='/' />
         </Routes>
