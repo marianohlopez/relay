@@ -26,7 +26,7 @@
     justify-content: center;
     align-items: center;
     font-weight: bolder;
-    z-index: 2;
+    z-index: 8;
 }
 
 .albumButton:hover {
@@ -73,7 +73,6 @@
         width: 80%;
         border-radius: 40px;
         padding: 20px;
-        z-index: 0;
     }
 
     .albumButton {
@@ -90,13 +89,10 @@
     .albumPlayerActive {
         position: absolute;
         bottom: 2px;
-        z-index: 6;
         top: 5%;
-        bottom: 5%;
         left: 15%;
+        height: 250px;
         width: 70%;
-        height: 100%;
-        z-index: 4;
     }
 
     .spotifyButton {

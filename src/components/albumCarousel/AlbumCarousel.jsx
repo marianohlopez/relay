@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
 import './albumCarousel.css'
-import { Link } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
 import AlbumButtom from './AlbumButtom';
 
@@ -72,7 +71,7 @@ const AlbumCarousel = () => {
                         alt="First slide"
                         />
                         <AlbumButtom displayPlayer={displayPlayer} classPlayer={display} />
-                        <iframe className={display} style={{borderRadius:'12px'}} 
+                        <iframe className={display} style={{borderRadius:'12px', zIndex: "2"}} 
                             src="https://open.spotify.com/embed/album/6hzvfxV9xXaepasZRNPIeZ?utm_source=generator" 
                             width="40%" height="352" frameBorder="0" allowFullScreen="" 
                             allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
