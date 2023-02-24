@@ -9,7 +9,6 @@
     width: 40%;
     padding: 30px;
     border-radius: 40px;
-    padding: 20px;
 }
 
 .albumButton {
@@ -19,8 +18,8 @@
     width: 80px;
     height: 80px;
     background-color: transparent;
-    color: white;
     border: solid white 4px;
+    color: white;
     border-radius: 80px;
     font-size: 60px;
     display: flex;
@@ -28,6 +27,11 @@
     align-items: center;
     font-weight: bolder;
     z-index: 2;
+}
+
+.albumButton:hover {
+    background-color: white;
+    color: black;
 }
 
 .albumPlayer {
@@ -38,13 +42,23 @@
     visibility: visible;
 }
 
+.logoContainer {
+    width: 50%;
+    margin-left: 7vw;
+    margin-top: 2vh;
+}
+
+.logoContainer img {
+    width: 85vw;
+}
+
 @media (max-width: 700px) {
 
     .imageAlbum {
         width: 80%;
-        padding: 30px;
         border-radius: 40px;
         padding: 20px;
+        z-index: 0;
     }
 
     .albumButton {
@@ -55,16 +69,19 @@
     }
 
     .albumPlayer {
-        visibility: visible;
         display: none;
     }
 
     .albumPlayerActive {
         position: absolute;
+        bottom: 2px;
+        z-index: 6;
         top: 5%;
-
+        bottom: 5%;
         left: 15%;
         width: 70%;
-        height: 280px;
+        height: 100%;
+        z-index: 4;
     }
+
 }
