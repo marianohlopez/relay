@@ -1,0 +1,110 @@
+.carouselFont {
+    background-image: url('./Desktop-3.png');
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imageAlbum {
+    width: 40%;
+    padding: 30px;
+    border-radius: 40px;
+}
+
+.albumButton {
+    position: absolute;
+    bottom: 7%;
+    left: 41%;
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    border: solid white 4px;
+    color: white;
+    border-radius: 80px;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    z-index: 5;
+}
+
+.albumButton:hover {
+    background-color: white;
+    color: black;
+}
+
+.albumPlayer {
+    visibility: hidden;
+}
+
+.albumPlayerActive {
+    visibility: visible;
+}
+
+.logoContainer {
+    margin-left: 8.5vw;
+    margin-top: 2vh;
+}
+
+.imgLogo {
+    width: 90%;
+}
+
+.spotifyButton {
+    position: absolute;
+    bottom: 8vh;
+    right: 12vw;
+    width: 7vw;
+    z-index: 2;
+}
+
+.spotifyButton2 {
+    position: absolute;
+    bottom: 6vh;
+    right: 12vw;
+    width: 7vw;
+    z-index: 2;
+}
+
+@media (max-width: 700px) {
+
+    .imageAlbum {
+        width: 80%;
+        border-radius: 40px;
+        padding: 20px;
+    }
+
+    .albumButton {
+        bottom: 12%;
+        left: 65%;
+        width: 50px;
+        height: 50px;
+        z-index: 5;
+    }
+
+    .albumPlayer {
+        display: none;
+    }
+
+    .albumPlayerActive {
+        position: absolute;
+        bottom: 2px;
+        top: 5%;
+        left: 15%;
+        height: 250px;
+        width: 70%;
+    }
+
+    .spotifyButton {
+        bottom: 3vh;
+        right: 12vw;
+        width: 10vw;
+    }
+
+    .spotifyButton2 {
+        bottom: 2vh;
+        right: 12vw;
+        width: 10vw;
+    }
+}
