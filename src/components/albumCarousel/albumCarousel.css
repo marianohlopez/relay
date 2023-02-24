@@ -43,13 +43,28 @@
 }
 
 .logoContainer {
-    width: 50%;
-    margin-left: 7vw;
+    margin-left: 8.5vw;
     margin-top: 2vh;
 }
 
-.logoContainer img {
-    width: 85vw;
+.imgLogo {
+    width: 90%;
+}
+
+.spotifyButton {
+    position: absolute;
+    bottom: 8vh;
+    right: 12vw;
+    width: 7vw;
+    z-index: 2;
+}
+
+.spotifyButton2 {
+    position: absolute;
+    bottom: 6vh;
+    right: 12vw;
+    width: 7vw;
+    z-index: 2;
 }
 
 @media (max-width: 700px) {
@@ -84,4 +99,15 @@
         z-index: 4;
     }
 
+    .spotifyButton {
+        bottom: 3vh;
+        right: 12vw;
+        width: 10vw;
+    }
+
+    .spotifyButton2 {
+        bottom: 2vh;
+        right: 12vw;
+        width: 10vw;
+    }
 }

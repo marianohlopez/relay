@@ -1,12 +1,15 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
 import './albumCarousel.css'
+import { Link } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
 import AlbumButtom from './AlbumButtom';
 
 const AlbumCarousel = () => {
 
     const [display, setDisplay] = useState('albumPlayer')
+
+    const [hovered, setHovered] = useState(false);
     
     const displayPlayer = () => display === "albumPlayer" ? setDisplay("albumPlayerActive") : setDisplay("albumPlayer") 
 
@@ -78,9 +81,18 @@ const AlbumCarousel = () => {
                     </div>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <div className="logoContainer">
-                        <img src="./img/albumCarousel/logo-rojo.png" alt="Logo rojo" />
-                        
+                    <div onMouseEnter={() => setHovered(true)}
+                    onMouseLeave={() => setHovered(false)}
+                     className="logoContainer">
+                        {hovered? <img className='imgLogo' src="./img/albumCarousel/logo-blanco.png" alt="Logo rojo"/> 
+                        : <img className='imgLogo' src="./img/albumCarousel/logo-rojo.png" alt="Logo rojo"/>}
+                        {hovered? <a href="https://open.spotify.com/artist/17VVNVczAolAC7Z0daKlSN" target="_blank">
+                            <img className='spotifyButton2' src="./img/albumCarousel/spotify-rojo.png" 
+                            alt="boton a Spotify" /></a> :  
+                            <a href="https://open.spotify.com/artist/17VVNVczAolAC7Z0daKlSN" target="_blank">
+                            <img className='spotifyButton' src="./img/albumCarousel/spotify-violeta.png" 
+                            alt="boton a Spotify" />
+                        </a>}
                     </div>
                 </Carousel.Item>
             </Carousel>
