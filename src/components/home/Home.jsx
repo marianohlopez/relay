@@ -8,10 +8,12 @@ const Home = () => {
     const darkFont = () => font === 'font'? setFont('darkFont') : setFont('font');
     
     return (
-        <div id='bandLogo' className={font}>
-            <NavBar Toggle={darkFont}/>
+    <>
+        <NavBar Toggle={darkFont}/>
+
+    <div id='bandLogo' className={font}>
         </div>
-    );
+        </>);
 }
 
 export default Home;
