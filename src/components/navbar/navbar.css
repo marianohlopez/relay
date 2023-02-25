@@ -53,6 +53,8 @@ li {
 
     .navBar {
         background-color: transparent;
+        height: 0px;
+        --bs-navbar-padding-y: 0rem !important;
     }
 
     .btnNavActive {
