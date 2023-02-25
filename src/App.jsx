@@ -16,10 +16,10 @@ function App() {
           <MarqueeNews Texts={["NEWS","NOVEDADES"]} Repeat={10} />
           <Instagram/> 
           <MarqueeNews Texts={["DISCOGRAFIA"]} Repeat={10} />
-          <AlbumCarousel id={"carousel"} />
-          <Videogif id={"videos"} />
+          <AlbumCarousel />
+          <Videogif />
           <MarqueeNews Texts={["BIOGRAFIA"]} Repeat={12} />
-          <Biografia id={"biografia"} />
+          <Biografia />
           <MarqueeNews Texts={["TOURS"]} Repeat={15} />
 
         <Routes>

@@ -13,7 +13,7 @@ const AlbumCarousel = () => {
     const displayPlayer = () => display === "albumPlayer" ? setDisplay("albumPlayerActive") : setDisplay("albumPlayer") 
 
     return (
-        <div className='carouselFont'>
+        <div id={"carousel"} className='carouselFont'>
             <Carousel interval={null} variant="dark" indicators={false}>
                 <Carousel.Item>
                     <div className="d-flex justify-content-center align-items-center"> 

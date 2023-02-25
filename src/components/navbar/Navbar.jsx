@@ -11,9 +11,9 @@ const NavBar = ({Toggle}) => {
 
     return (
 
-        <Navbar onToggle={Toggle} className='navBar' expand="lg">
+        <Navbar onToggle={Toggle} className='navBar sticky-top'  expand="lg">
             <Container>
-                <Navbar.Brand><Link to={'/'}><img className="logo" src={logo} alt="Logo de empresa"/></Link></Navbar.Brand>
+                <Navbar.Brand><ScrollLink to={'bandLogo'}><img className="logo" src={logo} alt="Logo de empresa"/></ScrollLink></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse className={({isActive}) => (isActive? console.log("hola") :  console.log("chau"))}  id="basic-navbar-nav">
                     <Nav className="ms-auto ">
