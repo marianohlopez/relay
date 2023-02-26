@@ -57,6 +57,10 @@ li {
         --bs-navbar-padding-y: 0rem !important;
     }
 
+    .navbar-toggler {
+        margin-top: 10px;
+    }
+
     .btnNavActive {
         color: white;
     }
