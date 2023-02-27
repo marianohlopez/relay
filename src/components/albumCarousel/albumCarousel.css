@@ -105,7 +105,8 @@
     }
 
     .albumPlayer {
-        display: none;
+        position: absolute;
+        transform: translateY(50%);
     }
 
     .albumPlayerActive {
