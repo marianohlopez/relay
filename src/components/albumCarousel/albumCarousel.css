@@ -27,6 +27,7 @@
     align-items: center;
     font-weight: bolder;
     z-index: 5;
+    transition: 0.3s;
 }
 
 .albumButton:hover {
@@ -36,10 +37,14 @@
 
 .albumPlayer {
     visibility: hidden;
+    opacity: 0;
+    transition: 0.7s;
+    transform: translateX(-90%);
 }
 
 .albumPlayerActive {
     visibility: visible;
+    transition: 0.7s;
 }
 
 .logoContainer {
