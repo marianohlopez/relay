@@ -1,6 +1,30 @@
 .videogif{
     width: 100%;
+    height: 100vh;
+    background-color: black;
+    text-align: center;
+    position: relative;
+
 }
-.videogif > img{
-    width: 100%;
+.videogifimg{
+    cursor: pointer;
+    max-height: 80vh;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+@media (max-width: 700px) {
+    .videogif{
+        height: 80vw;
+
+    }
+    .videogifimg{
+        cursor: pointer;
+        width: 100%;
+    
+    }
 }

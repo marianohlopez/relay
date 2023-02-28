@@ -6,11 +6,29 @@ import biografia3 from './relay_biografia_3.png'
 
 const Biografia = () => {
     return (
-        <div id={"biografia"} className='image'>
-            <div>
-                <img className='images_bio' src={biografia1} alt="relay_bio_1"/>
-                <img className='images_bio' src={biografia2} alt="relay_bio_1" style={{marginLeft: '5%', marginRight: '5%'}}/>
-                <img className='images_bio' src={biografia3} alt="relay_bio_1" />
+        <div id={"biografia"} className='biografia'>
+            <div className="table">
+            <div style={{float: 'left', width: '100%'}}>
+            <div className="container_image_bio">
+            <img className='image' src={biografia1} alt="relay_bio_1"/>
+  <div className="middle">
+    <div className="text"><b>DAMIÁN</b><br/>Guitarra</div>
+  </div>
+</div>
+<div className="container_image_bio" style={{marginLeft: '5%', marginRight: '5%'}}>
+<img className='image' src={biografia2} alt="relay_bio_1" />
+  <div className="middle">
+    <div className="text"><b>José</b><br/>Bajo y voz</div>
+  </div>
+</div>
+<div className="container_image_bio">
+<img className='image' src={biografia3} alt="relay_bio_1" />
+  <div className="middle">
+    <div className="text"><b>Alejo</b><br/>Bateria</div>
+  </div>
+</div>
+</div>
+
 
 
             </div>
