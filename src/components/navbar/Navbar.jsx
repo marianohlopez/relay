@@ -1,4 +1,5 @@
 import Container from 'react-bootstrap/Container';
+import { useState } from "react";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link, NavLink } from 'react-router-dom';
@@ -7,15 +8,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import logo from './Logo-rojo.png'
 
-const NavBar = ({Toggle}) => {
+const NavBar = () => {
+
+    const [font, setFont] = useState(false)
+
+    const darkFont = () => font === false? setFont('fontHamburguer') : setFont(false);
 
     return (
 
-        <Navbar onToggle={Toggle} className='navBar sticky-top'  expand="lg">
-            <Container>
+        <Navbar onToggle={darkFont} className='navBar sticky-top'  expand="lg">
+            <Container className={font}>
                 <Navbar.Brand><ScrollLink to={'bandLogo'}><img className="logo" src={logo} alt="Logo de empresa"/></ScrollLink></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse className={({isActive}) => (isActive? console.log("hola") :  console.log("chau"))}  id="basic-navbar-nav">
+                <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto ">
                         <ul className="btnNavBar">
                             <li>

@@ -4,20 +4,9 @@
     height: 710px;
 }
 
-.darkFont {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./banner.jpg");
-    background-size: cover;
-    height: 710px;
-}
-
 @media (max-width: 991px) {
     .font {
         background-image: url("./img_mobile.jpg");
-        height: 920px;
-    }
-
-    .darkFont {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img_mobile.jpg");
         height: 920px;
     }
 }
@@ -25,10 +14,6 @@
 @media (max-width: 700px) {
     .font {
         background-image: url("./img_mobile.jpg");
-        height: 520px;
-    }
-
-    .darkFont {
         height: 520px;
     }
 }

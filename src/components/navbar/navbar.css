@@ -52,9 +52,13 @@ li {
     }
 
     .navBar {
-        background-color: transparent;
         height: 0px;
         --bs-navbar-padding-y: 0rem !important;
+    }
+
+    .fontHamburguer {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding-bottom: 100px;
     }
 
     .navbar-toggler {
