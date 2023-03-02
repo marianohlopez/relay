@@ -3,7 +3,7 @@ import './biografia.css'
 import biografia1 from './relay_biografia_1.png'
 import biografia2 from './relay_biografia_2.png'
 import biografia3 from './relay_biografia_3.png'
-
+import {flip} from "./flip.js";
 const Biografia = () => {
     return (
         <div id={"biografia"} className='biografia'>
@@ -11,26 +11,24 @@ const Biografia = () => {
             <div style={{float: 'left', width: '100%'}}>
             <div className="container_image_bio">
             <img className='image' src={biografia1} alt="relay_bio_1"/>
-  <div className="middle">
+  <div className="overlay">
     <div className="text"><b>DAMIÁN</b><br/>Guitarra</div>
   </div>
 </div>
 <div className="container_image_bio" style={{marginLeft: '5%', marginRight: '5%'}}>
 <img className='image' src={biografia2} alt="relay_bio_1" />
-  <div className="middle">
+  <div className="overlay">
     <div className="text"><b>José</b><br/>Bajo y voz</div>
   </div>
 </div>
 <div className="container_image_bio">
 <img className='image' src={biografia3} alt="relay_bio_1" />
-  <div className="middle">
+  <div id="middle" className="overlay">
     <div className="text"><b>Alejo</b><br/>Bateria</div>
   </div>
 </div>
 </div>
-
-
-
+{flip()}
             </div>
   <div className="texto">
 
