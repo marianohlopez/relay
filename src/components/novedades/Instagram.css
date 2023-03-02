@@ -3,6 +3,7 @@
     overflow: hidden;
     width: 100%;
     padding-top: 62%;
+    background-color: black;
   }
   
   /* Then style the iframe to fit in the container div with full height and width */
@@ -18,4 +19,3 @@
   .css-4aovbb{
     display: none !important;
   }
-  
