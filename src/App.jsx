@@ -20,7 +20,7 @@ function App() {
           <Videogif />
           <MarqueeNews Texts={["BIOGRAFIA"]} Repeat={12} />
           <Biografia />
-          <MarqueeNews Texts={["TOURS"]} Repeat={15} />
+          <MarqueeNews Texts={["FECHAS"]} Repeat={15} />
 
         <Routes>
           <Route path='/' />

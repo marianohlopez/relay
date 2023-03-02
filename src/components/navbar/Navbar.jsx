@@ -33,7 +33,7 @@ const NavBar = () => {
                                 <NavLink className={({isActive}) => (isActive? 'btnNavActive' :  'btnNav')}><ScrollLink to={'biografia'}>Biografia</ScrollLink></NavLink>
                             </li>
                             <li>
-                                <NavLink className={({isActive}) => (isActive? 'btnNavActive' :  'btnNav')} to={'/'}>Tours</NavLink>
+                                <NavLink className={({isActive}) => (isActive? 'btnNavActive' :  'btnNav')} to={'/'}>Fechas</NavLink>
                             </li>
                             <li>
                                 <NavLink className={({isActive}) => (isActive? 'btnNavActive' :  'btnNav')} to={'/'}>Contacto</NavLink>
