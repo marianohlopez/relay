@@ -81,12 +81,19 @@ padding-bottom: 3%;
     .biografia {
         background-image: url("../../../public/img/biografia_relay_m.png");
         background-size: cover;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     .texto > p {
         font-size: 3vw;
         line-height: 4vw;
 
     }
+    .text{
+      font-size: 3vw;
+      line-height: 4vw;
+
+  }
 }
 @media (min-width: 701px) {
     .biografia {
