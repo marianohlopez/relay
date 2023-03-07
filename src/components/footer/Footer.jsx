@@ -15,7 +15,7 @@ const Footer = () => {
             <a href="https://www.tiktok.com/@relayband" target="_blank"  rel="noopener noreferrer" > <div className='div_img_footer tiktok'></div></a>
             <a href="https://twitter.com/relaybanda" target="_blank"  rel="noopener noreferrer" ><div className='div_img_footer twitter'></div></a>
             <a href="https://www.facebook.com/relayoficial" target="_blank"  rel="noopener noreferrer" ><div className='div_img_footer fb'></div></a>
-            <a href="" target="_blank"  rel="noopener noreferrer" > <div className='div_img_footer div_img_footer_last mail'></div></a>
+            <a href="mailto:relayrock2017@outlook.com" target="_blank"  rel="noopener noreferrer" > <div className='div_img_footer div_img_footer_last mail'></div></a>
             </div>
         </div>
     );
