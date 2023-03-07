@@ -33,10 +33,10 @@ const NavBar = () => {
                                 <NavLink className={({isActive}) => (isActive? 'btnNavActive' :  'btnNav')}><ScrollLink to={'biografia'}>Biografia</ScrollLink></NavLink>
                             </li>
                             <li>
-                                <NavLink className={({isActive}) => (isActive? 'btnNavActive' :  'btnNav')} to={'/'}>Fechas</NavLink>
+                                <NavLink className={({isActive}) => (isActive? 'btnNavActive' :  'btnNav')} to={'/'}><ScrollLink to={'fechas'}>Fechas</ScrollLink></NavLink>
                             </li>
                             <li>
-                                <NavLink className={({isActive}) => (isActive? 'btnNavActive' :  'btnNav')} to={'/'}>Contacto</NavLink>
+                                <NavLink className={({isActive}) => (isActive? 'btnNavActive' :  'btnNav')} to={'/'}><ScrollLink to={'contacto'}>Contacto</ScrollLink></NavLink>
                             </li>
                         </ul>
                     </Nav>
