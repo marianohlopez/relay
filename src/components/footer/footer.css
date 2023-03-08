@@ -1,89 +1,134 @@
-
-.div_img_footer{
+.div_img_footer {
     width: 6.944vw;
     margin-right: 3.472vw;
     height: 6.944vw;
     background-size: contain !important;
 
 }
-.div_img_footer_last{
+
+.div_img_footer_last {
     margin-right: 0px !important;
 }
-.footer{
+
+.footer {
     background-color: black;
-padding-top: 5.625vw;
+    padding-top: 5.625vw;
     padding-left: 7.708vw;
-padding-right: 7.708vw;
-padding-bottom: 5.625vw;
+    padding-right: 7.708vw;
+    padding-bottom: 5.625vw;
     text-align: center;
 }
-.logos{
+
+.logos {
     padding-left: 7.278vw;
     padding-right: 7.278vw;
     display: flex;
 }
-.ig{
+
+.ig {
     background: url("./relay_ig.svg") no-repeat;
 }
-.ig:hover{
+
+.ig:hover {
     background: url("./relay_ig2.svg") no-repeat;
 }
-.youtube{
+
+.youtube {
     background: url("./relay_youtube.svg") no-repeat;
 }
-.youtube:hover{
+
+.youtube:hover {
     background: url("./relay_youtube2.svg") no-repeat;
 }
-.spotify{
+
+.spotify {
     background: url("./relay_spotify.svg") no-repeat;
 }
-.spotify:hover{
+
+.spotify:hover {
     background: url("./relay_spotify2.svg") no-repeat;
 }
-.tiktok{
+
+.tiktok {
     background: url("./relay_tiktok.svg") no-repeat;
 }
-.tiktok:hover{
+
+.tiktok:hover {
     background: url("./relay_tiktok2.svg") no-repeat;
 }
-.twitter{
+
+.twitter {
     background: url("./relay_twitter.svg") no-repeat;
 }
-.twitter:hover{
+
+.twitter:hover {
     background: url("./relay_twitter2.svg") no-repeat;
 }
-.fb{
+
+.fb {
     background: url("./relay_fb.svg") no-repeat;
 }
-.fb:hover{
+
+.fb:hover {
     background: url("./relay_fb2.svg") no-repeat;
 }
-.mail{
+
+.mail {
     background: url("./relay_mail.svg") no-repeat;
 }
-.mail:hover{
+
+.mail:hover {
     background: url("./relay_mail2.svg") no-repeat;
 }
-.hr{
+
+.hr {
     margin-top: 3.333vw;
     margin-bottom: 3.333vw;
     border: 0.317vw solid #FFFFFF;
-opacity: 1;
+    opacity: 1;
 }
-.footer_text{
+
+.footer_text {
     margin-top: 5.625vw;
-font-family: 'Roboto';
-font-style: normal;
-font-size: 3.333vw;
-line-height: 3.889vw;
-/* identical to box height, or 117% */
-align-items: center;
-color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 3.333vw;
+    line-height: 3.889vw;
+    /* identical to box height, or 117% */
+    align-items: center;
+    color: #FFFFFF;
 }
+
+.logoFechas {
+    height: 0px;
+    width: 0px;
+    position: relative;
+    bottom: 100px;
+    left: 10px;
+}
+
+@media (max-width: 991px) {
+    .logoSize {
+        width: 150px;
+    }
+
+    .logoFechas {
+        bottom: 80px;
+    }
+}
+
 @media (max-width: 700px) {
-    .logos{
+    .logos {
         padding-left: 7.278vw;
         padding-right: 7.278vw;
         display: flex;
-    }    
+    }
+
+    .logoSize {
+        width: 88px;
+    }
+
+    .logoFechas {
+        bottom: 50px;
+    }
 }

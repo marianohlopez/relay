@@ -1,10 +1,13 @@
 import React from 'react';
 import './footer.css'
-
+import logoFooter from './Logo-footer.png'
 
 const Footer = () => {
     return (
         <div id='contacto' className='footer'>
+            <div className='logoFechas'>
+                <img src={logoFooter} alt="logo-footer" className='logoSize'/>
+            </div>
             <span className='footer_text'>SEGUINOS</span>
             <hr className='hr'/>
             <div className='logos'>

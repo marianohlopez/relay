@@ -1,5 +1,3 @@
-import './tours.css'
-import logoFooter from './Logo-footer.png'
 import { Helmet } from "react-helmet"
 
 const Tours = () => {
