@@ -5,9 +5,6 @@ import { Helmet } from "react-helmet"
 const Tours = () => {
     return (
         <>
-            <div className='logoFechas'>
-                    <img src={logoFooter} alt="logo-footer" className='logoSize'/>
-            </div>
             <div id='fechas'>
                 <a href="https://www.songkick.com/artists/10240567" className="songkick-widget" 
                 data-theme="dark" data-track-button="on" data-detect-style="true" data-font-color="#ffffff" 
