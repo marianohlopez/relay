@@ -2,10 +2,10 @@ import Container from 'react-bootstrap/Container';
 import { useState } from "react";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './navbar.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+import { Link as ScrollLink} from 'react-scroll';
 import logo from './Logo-rojo.png'
 
 const NavBar = () => {

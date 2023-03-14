@@ -11,9 +11,7 @@ const Tours = () => {
                 <script src="//widget.songkick.com/10240567/widget.js"></script>
                 </Helmet>
             </div>
-        </>
-            
-        
+        </>     
     )
 }
 
